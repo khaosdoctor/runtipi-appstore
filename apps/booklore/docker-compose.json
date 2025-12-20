@@ -1,10 +1,12 @@
 {
   "schemaVersion": 2,
+  "$schema": "https://schemas.runtipi.io/dynamic-compose.json",
   "services": [
     {
       "name": "booklore",
       "image": "booklore/booklore:v1.15.0",
-      "internalPort": "6060",
+      "internalPort": 6060,
+      "isMain": true,
       "environment": [
         {
           "key": "USER_ID",
@@ -67,7 +69,7 @@
     {
       "name": "mariadb",
       "image": "lscr.io/linuxserver/mariadb:11.4.5",
-      "internalPort": "3306",
+      "internalPort": 3306,
       "environment": [
         {
           "key": "PUID",
