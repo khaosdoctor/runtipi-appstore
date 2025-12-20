@@ -1,0 +1,56 @@
+{
+  "name": "Booklore",
+  "id": "booklore",
+  "available": true,
+  "short_desc": "Your self-hosted digital library management system.",
+  "author": "booklore",
+  "port": 6060,
+  "categories": [
+    "books"
+  ],
+  "description": "Your self-hosted digital library management system.",
+  "tipi_version": 1,
+  "version": "v1.15.0",
+  "source": "https://github.com/booklore-app/booklore",
+  "website": "https://booklore-app.github.io",
+  "exposable": true,
+  "supported_architectures": [
+    "arm64",
+    "amd64"
+  ],
+  "created_at": 1766181861692,
+  "updated_at": 1766181861692,
+  "dynamic_config": true,
+  "form_fields": [
+    {
+      "type": "number",
+      "label": "Port",
+      "default": 6060,
+      "regex": "^(?:6553[0-5]|655[0-2]\\d|65[0-4]\\d{2}|6[0-4]\\d{3}|[1-5]\\d{4}|[1-9]\\d{0,3})$",
+      "max": 5,
+      "min": 4,
+      "required": false,
+      "env_variable": "BOOKLORE_PORT"
+    },
+    {
+      "type": "random",
+      "placeholder": "Used for the booklore connection",
+      "label": "Database password",
+      "default": 6060,
+      "max": 256,
+      "min": 32,
+      "required": false,
+      "env_variable": "DB_PASSWORD"
+    },
+    {
+      "type": "random",
+      "placeholder": "Used for the root password",
+      "label": "Database password",
+      "default": 6060,
+      "max": 256,
+      "min": 32,
+      "required": false,
+      "env_variable": "MYSQL_ROOT_PASSWORD"
+    }
+  ]
+}
