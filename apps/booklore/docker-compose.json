@@ -67,6 +67,7 @@
     {
       "name": "mariadb",
       "image": "lscr.io/linuxserver/mariadb:11.4.5",
+      "internalPort": "3306",
       "environment": [
         {
           "key": "PUID",
