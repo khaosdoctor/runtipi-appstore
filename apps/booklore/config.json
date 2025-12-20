@@ -9,7 +9,7 @@
     "books"
   ],
   "description": "Your self-hosted digital library management system.",
-  "tipi_version": 2,
+  "tipi_version": 3,
   "version": "v1.15.0",
   "source": "https://github.com/booklore-app/booklore",
   "website": "https://booklore-app.github.io",
