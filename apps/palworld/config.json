@@ -1,0 +1,19 @@
+{
+  "name": "Palworld",
+  "id": "palworld",
+  "available": true,
+  "short_desc": "Palworld dedicated server.",
+  "author": "palworld",
+  "port": 6060,
+  "categories": ["books"],
+  "description": "Palworld dedicated server.",
+  "tipi_version": 4,
+  "version": "v1.15.0",
+  "source": "https://github.com/thijsvanloef/palworld-server-docker",
+  "website": "https://www.pocketpair.jp/palworld",
+  "exposable": true,
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1766181861692,
+  "updated_at": 1766181861692,
+  "dynamic_config": false
+}
