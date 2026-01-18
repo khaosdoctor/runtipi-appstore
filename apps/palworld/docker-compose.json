@@ -19,7 +19,7 @@
         },
         {
           "key": "PLAYERS",
-          "value": 16
+          "value": "${NUM_PLAYERS}"
         },
         {
           "key": "SERVER_PASSWORD",
