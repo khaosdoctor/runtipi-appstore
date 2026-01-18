@@ -4,7 +4,7 @@
   "available": true,
   "short_desc": "Palworld dedicated server.",
   "author": "palworld",
-  "port": 6060,
+  "port": 8211,
   "categories": ["games"],
   "description": "Palworld dedicated server.",
   "tipi_version": 1,
@@ -70,8 +70,8 @@
       "label": "Max Players",
       "default": 16,
       "regex": "^(?:6553[0-5]|655[0-2]\\d|65[0-4]\\d{2}|6[0-4]\\d{3}|[1-5]\\d{4}|[1-9]\\d{0,3})$",
-      "max": 5,
-      "min": 4,
+      "max": 32,
+      "min": 1,
       "required": false,
       "env_variable": "NUM_PLAYERS"
     },
@@ -86,12 +86,11 @@
       "env_variable": "REST_API_PORT"
     },
     {
-      "type": "bool",
+      "type": "boolean",
       "label": "Rest API Enabled",
       "default": true,
-      "regex": "^(?:6553[0-5]|655[0-2]\\d|65[0-4]\\d{2}|6[0-4]\\d{3}|[1-5]\\d{4}|[1-9]\\d{0,3})$",
-      "max": 5,
-      "min": 4,
+
+
       "required": false,
       "env_variable": "REST_API_ENABLED"
     }

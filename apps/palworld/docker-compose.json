@@ -62,7 +62,7 @@
           "value": "(Steam,Xbox,PS5,Mac)"
         }
       ],
-      "internalPort": "${SERVER_PORT}",
+      "internalPort": 8211,
       "addPorts": [
         {
           "containerPort": 27015,
@@ -75,6 +75,11 @@
           "hostPort": "${REST_API_PORT}",
           "tcp": true,
           "udp": false
+        }, {
+         "containerPort": 8211,
+         "hostPort": "${SERVER_PORT}",
+         "tcp": true,
+         "udp": false
         }
       ],
       "volumes": [
