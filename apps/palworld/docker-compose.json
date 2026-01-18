@@ -72,7 +72,7 @@
         },
         {
           "containerPort": 8212,
-          "hostPort": ${REST_API_PORT},
+          "hostPort": "${REST_API_PORT}",
           "tcp": true,
           "udp": false
         }
