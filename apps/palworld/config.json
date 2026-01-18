@@ -46,7 +46,7 @@
       "env_variable": "SERVER_ADMIN_PASSWORD"
     },
     {
-      "type": "random",
+      "type": "string",
       "placeholder": "Used for the server setup",
       "label": "Server Name",
       "max": 256,
