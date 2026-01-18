@@ -8,7 +8,7 @@
   "categories": ["books"],
   "description": "Palworld dedicated server.",
   "tipi_version": 4,
-  "version": "v1.15.0",
+  "version": "v2.3.0",
   "source": "https://github.com/thijsvanloef/palworld-server-docker",
   "website": "https://www.pocketpair.jp/palworld",
   "exposable": true,
