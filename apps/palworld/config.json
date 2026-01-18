@@ -5,7 +5,7 @@
   "short_desc": "Palworld dedicated server.",
   "author": "palworld",
   "port": 8211,
-  "categories": ["games"],
+  "categories": ["gaming"],
   "description": "Palworld dedicated server.",
   "tipi_version": 1,
   "version": "v2.3.0",
@@ -46,7 +46,7 @@
       "env_variable": "SERVER_ADMIN_PASSWORD"
     },
     {
-      "type": "string",
+      "type": "text",
       "placeholder": "Used for the server setup",
       "label": "Server Name",
       "default": "My Palworld Server",
@@ -56,7 +56,7 @@
       "env_variable": "SERVER_NAME"
     },
     {
-      "type": "string",
+      "type": "text",
       "placeholder": "Used for the server setup",
       "label": "Server Description",
       "default": "My Palworld Server description",
