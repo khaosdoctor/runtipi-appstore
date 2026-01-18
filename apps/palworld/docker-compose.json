@@ -62,7 +62,7 @@
           "value": "(Steam,Xbox,PS5,Mac)"
         }
       ],
-      "internalPort": 8211,
+      "internalPort": ${SERVER_PORT},
       "addPorts": [
         {
           "containerPort": 27015,
@@ -79,7 +79,7 @@
       ],
       "volumes": [
         {
-          "hostPath": "./palworld",
+          "hostPath": "${APP_DATA_DIR}/data/palworld",
           "containerPath": "/palworld/",
           "readOnly": false,
           "shared": false,
