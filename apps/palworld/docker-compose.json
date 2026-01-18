@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "palworld-server",
+      "image": "thijsvanloef/palworld-server-docker:latest",
+      "environment": [
+        {
+          "key": "PUID",
+          "value": 1000
+        },
+        {
+          "key": "PGID",
+          "value": 1000
+        },
+        {
+          "key": "PORT",
+          "value": "${SERVER_PORT}"
+        },
+        {
+          "key": "PLAYERS",
+          "value": 16
+        },
+        {
+          "key": "SERVER_PASSWORD",
+          "value": "${SERVER_PASSWORD}"
+        },
+        {
+          "key": "MULTITHREADING",
+          "value": true
+        },
+        {
+          "key": "REST_API_ENABLED",
+          "value": true
+        },
+        {
+          "key": "REST_API_PORT",
+          "value": 8212
+        },
+        {
+          "key": "TZ",
+          "value": "UTC"
+        },
+        {
+          "key": "ADMIN_PASSWORD",
+          "value": "${SERVER_ADMIN_PASSWORD}"
+        },
+        {
+          "key": "COMMUNITY",
+          "value": false
+        },
+        {
+          "key": "SERVER_NAME",
+          "value": "palworld-server dos Akidauanos"
+        },
+        {
+          "key": "SERVER_DESCRIPTION",
+          "value": "palworld-server dos Akidauanos"
+        },
+        {
+          "key": "CROSSPLAY_PLATFORMS",
+          "value": "(Steam,Xbox,PS5,Mac)"
+        }
+      ],
+      "internalPort": 8211,
+      "addPorts": [
+        {
+          "containerPort": 27015,
+          "hostPort": 27015,
+          "tcp": false,
+          "udp": true
+        },
+        {
+          "containerPort": 8212,
+          "hostPort": 8212,
+          "tcp": true,
+          "udp": false
+        }
+      ],
+      "volumes": [
+        {
+          "hostPath": "./palworld",
+          "containerPath": "/palworld/",
+          "readOnly": false,
+          "shared": false,
+          "private": false
+        }
+      ],
+      "stopGracePeriod": "30s"
+    }
+  ]
+}

@@ -15,5 +15,35 @@
   "supported_architectures": ["arm64", "amd64"],
   "created_at": 1766181861692,
   "updated_at": 1766181861692,
-  "dynamic_config": false
+  "dynamic_config": true,
+  "form_fields": [
+    {
+      "type": "number",
+      "label": "Port",
+      "default": 8211,
+      "regex": "^(?:6553[0-5]|655[0-2]\\d|65[0-4]\\d{2}|6[0-4]\\d{3}|[1-5]\\d{4}|[1-9]\\d{0,3})$",
+      "max": 5,
+      "min": 4,
+      "required": false,
+      "env_variable": "SERVER_PORT"
+    },
+    {
+      "type": "random",
+      "placeholder": "Used for the player connection",
+      "label": "Server password",
+      "max": 256,
+      "min": 32,
+      "required": false,
+      "env_variable": "SERVER_PASSWORD"
+    },
+    {
+      "type": "random",
+      "placeholder": "Used for the admin connection",
+      "label": "Server Admin password",
+      "max": 256,
+      "min": 32,
+      "required": false,
+      "env_variable": "SERVER_ADMIN_PASSWORD"
+    }
+  ]
 }
