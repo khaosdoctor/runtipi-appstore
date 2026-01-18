@@ -31,11 +31,11 @@
         },
         {
           "key": "REST_API_ENABLED",
-          "value": true
+          "value": "${REST_API_ENABLED}"
         },
         {
           "key": "REST_API_PORT",
-          "value": 8212
+          "value": "${REST_API_PORT}"
         },
         {
           "key": "TZ",
@@ -62,7 +62,7 @@
           "value": "(Steam,Xbox,PS5,Mac)"
         }
       ],
-      "internalPort": ${SERVER_PORT},
+      "internalPort": "${SERVER_PORT}",
       "addPorts": [
         {
           "containerPort": 27015,
