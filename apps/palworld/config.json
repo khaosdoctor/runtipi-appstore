@@ -64,6 +64,36 @@
       "min": 32,
       "required": false,
       "env_variable": "SERVER_DESCRIPTION"
+    },
+    {
+      "type": "number",
+      "label": "Players",
+      "default": 16,
+      "regex": "^(?:6553[0-5]|655[0-2]\\d|65[0-4]\\d{2}|6[0-4]\\d{3}|[1-5]\\d{4}|[1-9]\\d{0,3})$",
+      "max": 5,
+      "min": 4,
+      "required": false,
+      "env_variable": "NUM_PLAYERS"
+    },
+    {
+      "type": "number",
+      "label": "Rest API Port",
+      "default": 8212,
+      "regex": "^(?:6553[0-5]|655[0-2]\\d|65[0-4]\\d{2}|6[0-4]\\d{3}|[1-5]\\d{4}|[1-9]\\d{0,3})$",
+      "max": 5,
+      "min": 4,
+      "required": false,
+      "env_variable": "REST_API_PORT"
+    },
+    {
+      "type": "bool",
+      "label": "Rest API Enabled",
+      "default": true,
+      "regex": "^(?:6553[0-5]|655[0-2]\\d|65[0-4]\\d{2}|6[0-4]\\d{3}|[1-5]\\d{4}|[1-9]\\d{0,3})$",
+      "max": 5,
+      "min": 4,
+      "required": false,
+      "env_variable": "REST_API_ENABLED"
     }
   ]
 }
