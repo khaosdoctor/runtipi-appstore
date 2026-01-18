@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "palworld-server",
+      "image": "thijsvanloef/palworld-server-docker:latest",
+      "environment": [
+        {
+          "key": "PUID",
+          "value": 1000
+        },
+        {
+          "key": "PGID",
+          "value": 1000
+        },
+        {
+          "key": "PORT",
+          "value": "${SERVER_PORT}"
+        },
+        {
+          "key": "PLAYERS",
+          "value": "${NUM_PLAYERS}"
+        },
+        {
+          "key": "SERVER_PASSWORD",
+          "value": "${SERVER_PASSWORD}"
+        },
+        {
+          "key": "MULTITHREADING",
+          "value": true
+        },
+        {
+          "key": "REST_API_ENABLED",
+          "value": "${REST_API_ENABLED}"
+        },
+        {
+          "key": "REST_API_PORT",
+          "value": "${REST_API_PORT}"
+        },
+        {
+          "key": "TZ",
+          "value": "UTC"
+        },
+        {
+          "key": "ADMIN_PASSWORD",
+          "value": "${SERVER_ADMIN_PASSWORD}"
+        },
+        {
+          "key": "COMMUNITY",
+          "value": false
+        },
+        {
+          "key": "SERVER_NAME",
+          "value": "${SERVER_NAME}"
+        },
+        {
+          "key": "SERVER_DESCRIPTION",
+          "value": "${SERVER_DESCRIPTION}"
+        },
+        {
+          "key": "CROSSPLAY_PLATFORMS",
+          "value": "(Steam,Xbox,PS5,Mac)"
+        }
+      ],
+      "internalPort": 8211,
+      "addPorts": [
+        {
+          "containerPort": 27015,
+          "hostPort": 27015,
+          "tcp": false,
+          "udp": true
+        },
+        {
+          "containerPort": 8212,
+          "hostPort": "${REST_API_PORT}",
+          "tcp": true,
+          "udp": false
+        }, {
+         "containerPort": 8211,
+         "hostPort": "${SERVER_PORT}",
+         "tcp": true,
+         "udp": false
+        }
+      ],
+      "volumes": [
+        {
+          "hostPath": "${APP_DATA_DIR}/data/palworld",
+          "containerPath": "/palworld/",
+          "readOnly": false,
+          "shared": false,
+          "private": false
+        }
+      ],
+      "stopGracePeriod": "30s"
+    }
+  ]
+}
