@@ -51,11 +51,11 @@
         },
         {
           "key": "SERVER_NAME",
-          "value": "palworld-server dos Akidauanos"
+          "value": "${SERVER_NAME}"
         },
         {
           "key": "SERVER_DESCRIPTION",
-          "value": "palworld-server dos Akidauanos"
+          "value": "${SERVER_DESCRIPTION}"
         },
         {
           "key": "CROSSPLAY_PLATFORMS",

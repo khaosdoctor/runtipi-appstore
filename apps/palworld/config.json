@@ -44,6 +44,24 @@
       "min": 32,
       "required": false,
       "env_variable": "SERVER_ADMIN_PASSWORD"
+    },
+    {
+      "type": "random",
+      "placeholder": "Used for the server setup",
+      "label": "Server Name",
+      "max": 256,
+      "min": 32,
+      "required": false,
+      "env_variable": "SERVER_NAME"
+    },
+    {
+      "type": "random",
+      "placeholder": "Used for the server setup",
+      "label": "Server Description",
+      "max": 256,
+      "min": 32,
+      "required": false,
+      "env_variable": "SERVER_DESCRIPTION"
     }
   ]
 }
