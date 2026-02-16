@@ -1,0 +1,37 @@
+{
+  "name": "qui",
+  "id": "qui",
+  "available": true,
+  "short_desc": "A fast, modern web interface for qBittorrent",
+  "author": "autobrr",
+  "port": 7476,
+  "categories": [
+    "network",
+    "utilities"
+  ],
+  "description": "A fast, modern web interface for qBittorrent",
+  "tipi_version": 1,
+  "version": "v1.13.1",
+  "source": "https://github.com/autobrr/qui",
+  "website": "https://getqui.com",
+  "exposable": true,
+  "supported_architectures": [
+    "arm64",
+    "amd64"
+  ],
+  "created_at": 1771277522081,
+  "updated_at": 1771277522081,
+  "dynamic_config": true,
+  "form_fields": [
+    {
+      "type": "number",
+      "label": "Port",
+      "default": 6060,
+      "regex": "^(?:6553[0-5]|655[0-2]\\d|65[0-4]\\d{2}|6[0-4]\\d{3}|[1-5]\\d{4}|[1-9]\\d{0,3})$",
+      "max": 5,
+      "min": 4,
+      "required": false,
+      "env_variable": "PORT"
+    }
+  ]
+}
