@@ -9,7 +9,7 @@
     "gaming"
   ],
   "description": "Dedicated server for EuroTruck Simulator 2",
-  "tipi_version": 2,
+  "tipi_version": 3,
   "version": "v0.3.4",
   "source": "https://github.com/LsHallo/ets2-dedicated-convoy-server",
   "website": "https://eurotrucksimulator2.com",
@@ -43,6 +43,14 @@
       "default": "My ets2 Server",
       "required": true,
       "env_variable": "ETS_SERVER_NAME"
+    },
+    {
+      "type": "text",
+      "placeholder": "temporary_1_58",
+      "label": "Server version branch",
+      "default": "public",
+      "required": true,
+      "env_variable": "ETS_SERVER_BRANCH"
     },
     {
       "type": "text",
