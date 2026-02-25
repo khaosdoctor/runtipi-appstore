@@ -1,0 +1,146 @@
+{
+  "name": "ets2",
+  "id": "ets2",
+  "available": true,
+  "short_desc": "ets2 dedicated server.",
+  "author": "ets2",
+  "port": 8211,
+  "categories": [
+    "gaming"
+  ],
+  "description": "ets2 dedicated server.",
+  "tipi_version": 1,
+  "version": "v2.3.0",
+  "source": "https://github.com/LsHallo/ets2-dedicated-convoy-server",
+  "website": "https://eurotrucksimulator2.com",
+  "exposable": true,
+  "supported_architectures": [
+    "arm64",
+    "amd64"
+  ],
+  "created_at": 1772049343213,
+  "updated_at": 1772049343213,
+  "dynamic_config": true,
+  "form_fields": [
+    {
+      "type": "text",
+      "placeholder": "mod1, mod2, mod3, mod4",
+      "label": "Server moderators",
+      "required": false,
+      "env_variable": "ETS_SERVER_MODERATORS"
+    },
+    {
+      "type": "random",
+      "placeholder": "Used for the player connection",
+      "label": "Server password",
+      "max": 52,
+      "min": 32,
+      "required": false,
+      "env_variable": "ETS_SERVER_PASSWORD"
+    },
+    {
+      "type": "text",
+      "placeholder": "My ETS2 Server",
+      "label": "Server Name",
+      "default": "My ets2 Server",
+      "max": 256,
+      "min": 32,
+      "required": true,
+      "env_variable": "ETS_SERVER_NAME"
+    },
+    {
+      "type": "text",
+      "placeholder": "get a token at https://steamcommunity.com/dev/managegameservers",
+      "label": "Server logon token",
+      "default": "79gzbtepa2f0q72grfvazhhpsdasd",
+      "required": false,
+      "env_variable": "ETS_SERVER_LOGON_TOKEN"
+    },
+    {
+      "type": "boolean",
+      "label": "Enable player collisions",
+      "default": true,
+      "env_variable": "ETS_SERVER_PLAYER_DAMAGE"
+    },
+    {
+      "type": "boolean",
+      "label": "Enable traffic",
+      "default": true,
+      "env_variable": "ETS_SERVER_TRAFFIC"
+    },
+    {
+      "type": "boolean",
+      "label": "Enable collisions of players in menu",
+      "default": false,
+      "env_variable": "ETS_SERVER_HIDE_IN_COMPANY"
+    },
+    {
+      "type": "boolean",
+      "label": "Enable hiding of players in no collisions zone",
+      "default": true,
+      "env_variable": "ETS_SERVER_HIDE_COLLIDING"
+    },
+    {
+      "type": "boolean",
+      "label": "Enable server timezones",
+      "default": true,
+      "env_variable": "ETS_SERVER_TIMEZONES"
+    },
+    {
+      "type": "boolean",
+      "label": "Enable collision in service areas",
+      "default": false,
+      "env_variable": "ETS_SERVER_SERVICE_NO_COLLISION"
+    },
+    {
+      "type": "boolean",
+      "label": "Limit server to steam friends",
+      "default": false,
+      "env_variable": "ETS_SERVER_FRIENDS_ONLY"
+    },
+    {
+      "type": "boolean",
+      "label": "Show in public server list",
+      "default": true,
+      "env_variable": "ETS_SERVER_SHOW_SERVER"
+    },
+    {
+      "type": "boolean",
+      "label": "Mark optional mods as required",
+      "default": false,
+      "env_variable": "ETS_SERVER_MODS_OPTIONING"
+    },
+    {
+      "type": "boolean",
+      "label": "Update server on startup",
+      "default": true,
+      "env_variable": "ETS_SERVER_UPDATE_ON_START"
+    },
+    {
+      "type": "boolean",
+      "label": "Enable automatic config generation from env variables",
+      "default": true,
+      "env_variable": "ETS_SERVER_WRITE_CONFIG"
+    },
+    {
+      "type": "number",
+      "label": "External port of the server",
+      "default": 27015,
+      "regex": "^(?:6553[0-5]|655[0-2]\\d|65[0-4]\\d{2}|6[0-4]\\d{3}|[1-5]\\d{4}|[1-9]\\d{0,3})$",
+      "max": 5,
+      "min": 4,
+      "required": true,
+      "env_variable": "ETS_SERVER_PORT"
+    },
+    {
+      "type": "number",
+      "label": "External port of the query server",
+      "default": 27016,
+      "regex": "^(?:6553[0-5]|655[0-2]\\d|65[0-4]\\d{2}|6[0-4]\\d{3}|[1-5]\\d{4}|[1-9]\\d{0,3})$",
+      "max": 5,
+      "min": 4,
+      "required": true,
+      "env_variable": "ETS_SERVER_QUERY_PORT"
+    },
+  ]
+}

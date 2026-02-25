@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "euro-truck-server",
+      "image": "lshallo/ets2-convoy-server:v0.3.4",
+      "environment": [
+        {
+          "key": "ETS_SERVER_MODERATORS",
+          "value": "${ETS_SERVER_MODERATORS}"
+        },
+        {
+          "key": "ETS_SERVER_PASSWORD",
+          "value": "${ETS_SERVER_PASSWORD}"
+        },
+        {
+          "key": "ETS_SERVER_NAME",
+          "value": "${ETS_SERVER_NAME}"
+        },
+        {
+          "key": "ETS_SERVER_LOGON_TOKEN",
+          "value": "${ETS_SERVER_LOGON_TOKEN}"
+        },
+        {
+          "key": "ETS_SERVER_PLAYER_DAMAGE",
+          "value": "${ETS_SERVER_PLAYER_DAMAGE}"
+        },
+        {
+          "key": "ETS_SERVER_TRAFFIC",
+          "value": "${ETS_SERVER_TRAFFIC}"
+        },
+        {
+          "key": "ETS_SERVER_HIDE_IN_COMPANY",
+          "value": "${ETS_SERVER_HIDE_IN_COMPANY}"
+        },
+        {
+          "key": "ETS_SERVER_HIDE_COLLIDING",
+          "value": "${ETS_SERVER_HIDE_COLLIDING}"
+        },
+        {
+          "key": "ETS_SERVER_TIMEZONES",
+          "value": "${ETS_SERVER_TIMEZONES}"
+        },
+        {
+          "key": "ETS_SERVER_SERVICE_NO_COLLISION",
+          "value": "${ETS_SERVER_SERVICE_NO_COLLISION}"
+        },
+        {
+          "key": "ETS_SERVER_FRIENDS_ONLY",
+          "value": "${ETS_SERVER_FRIENDS_ONLY}"
+        },
+        {
+          "key": "ETS_SERVER_SHOW_SERVER",
+          "value": "${ETS_SERVER_SHOW_SERVER}"
+        },
+        {
+          "key": "ETS_SERVER_MODS_OPTIONING",
+          "value": "${ETS_SERVER_MODS_OPTIONING}"
+        },
+        {
+          "key": "ETS_SERVER_UPDATE_ON_START",
+          "value": "${ETS_SERVER_UPDATE_ON_START}"
+        },
+        {
+          "key": "ETS_SERVER_WRITE_CONFIG",
+          "value": "${ETS_SERVER_WRITE_CONFIG}"
+        },
+        {
+          "key": "ETS_SERVER_PORT",
+          "value": "${ETS_SERVER_PORT}"
+        },
+        {
+          "key": "ETS_SERVER_QUERY_PORT",
+          "value": "${ETS_SERVER_QUERY_PORT}"
+        }
+      ],
+      "volumes": [
+        {
+          "hostPath": "${APP_DATA_DIR}/data/euro-truck/save",
+          "containerPath": "/home/steam/.local/share/Euro Truck Simulator 2",
+          "readOnly": false,
+          "shared": false,
+          "private": false
+        }
+      ],
+      "internalPort": 27015,
+      "addPorts": [
+        {
+          "containerPort": 27015,
+          "hostPort": "${ETS_SERVER_PORT}",
+          "tcp": true,
+          "udp": true
+        },
+        {
+          "containerPort": 27016,
+          "hostPort": "${REST_API_PORT}",
+          "tcp": true,
+          "udp": true
+        }
+      ]
+    }
+  ]
+}
