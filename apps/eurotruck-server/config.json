@@ -30,10 +30,9 @@
       "env_variable": "ETS_SERVER_MODERATORS"
     },
     {
-      "type": "random",
+      "type": "text",
       "placeholder": "Used for the player connection",
       "label": "Server password",
-      "max": 52,
       "required": false,
       "env_variable": "ETS_SERVER_PASSWORD"
     },
@@ -42,7 +41,6 @@
       "placeholder": "My ETS2 Server",
       "label": "Server Name",
       "default": "My ets2 Server",
-      "max": 256,
       "required": true,
       "env_variable": "ETS_SERVER_NAME"
     },
