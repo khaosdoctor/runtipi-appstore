@@ -34,7 +34,6 @@
       "placeholder": "Used for the player connection",
       "label": "Server password",
       "max": 52,
-      "min": 32,
       "required": false,
       "env_variable": "ETS_SERVER_PASSWORD"
     },
@@ -44,7 +43,6 @@
       "label": "Server Name",
       "default": "My ets2 Server",
       "max": 256,
-      "min": 32,
       "required": true,
       "env_variable": "ETS_SERVER_NAME"
     },
