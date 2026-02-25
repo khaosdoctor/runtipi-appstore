@@ -93,7 +93,7 @@
         },
         {
           "containerPort": 27016,
-          "hostPort": "${REST_API_PORT}",
+          "hostPort": "${ETS_SERVER_QUERY_PORT}",
           "tcp": true,
           "udp": true
         }
