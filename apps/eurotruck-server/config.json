@@ -1,16 +1,16 @@
 {
-  "name": "ets2",
+  "name": "Eurotruck Simulator 2 Dedicated server",
   "id": "ets2",
   "available": true,
-  "short_desc": "ets2 dedicated server.",
-  "author": "ets2",
-  "port": 8211,
+  "short_desc": "Dedicated server for Eurotruck Simulator 2",
+  "author": "SCS",
+  "port": 27015,
   "categories": [
     "gaming"
   ],
-  "description": "ets2 dedicated server.",
-  "tipi_version": 1,
-  "version": "v2.3.0",
+  "description": "Dedicated server for EuroTruck Simulator 2",
+  "tipi_version": 2,
+  "version": "v0.3.4",
   "source": "https://github.com/LsHallo/ets2-dedicated-convoy-server",
   "website": "https://eurotrucksimulator2.com",
   "exposable": true,
