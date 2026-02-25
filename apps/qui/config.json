@@ -10,7 +10,7 @@
     "utilities"
   ],
   "description": "A fast, modern web interface for qBittorrent",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "v1.14.1",
   "source": "https://github.com/autobrr/qui",
   "website": "https://getqui.com",
